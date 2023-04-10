@@ -1,7 +1,127 @@
 /* Default styles */
+@font-face {
+    font-family: 'Millik';
+    src: url('/assets/fonts/Millik.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
+body{
+    font-family: 'Moderat';
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container {
+    /* width: 90%;
+    margin: 0 auto; */
+}
+
+.hamburger {
+    cursor: pointer;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(2px) rotate(40deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    transform: translateY(-7px) rotate(-40deg);
+}
+
+.bar {
+    width: 25px;
+    height: 2px;
+    background-color: #323232;
+    display: block;
+    margin: 7px;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+
+/* Header & Navbar Styles */
+header{
+    padding:0.9rem
+}
+#logo{
+    width:11.5rem;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu {
+    position: absolute;
+    top: 50px;
+    left:0;
+    background-color: #fff;
+    border-bottom: 1px solid #EE4133;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    gap: 3.5rem;
+    color: #262c55;
+    width: 100%;
+    font-size: 15px;
+    padding: 4rem 0 2rem 1rem;
+    transition: all 1s ease;
+}
+.nav-menu.active {
+    left: 0;
+}
+#payments , #commerce{
+    text-transform: uppercase;
+    font-size:12px ;
+    color:#686868;
+}
+.dropdown-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.drop{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    margin-top:20px;
+    padding:1px 0;
+}
+
+.dd-details{
+    display: flex;
+    flex-direction: column;
+    gap:6px;
+}
+.dd-details h4{
+    font-size: 15px;
+}
+.other-nav{
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+    color:#262c55
+}
+.other-nav a{
+    color: #262c55;
+    font-weight: 900;
+}
+#sign-in{
+    background-color: rgba(10, 14, 39, .9);
+    width:90%;
+    color:#fff;
+    text-align: center;
+    padding:1rem;
+    border-radius: 0.5rem;
 }
