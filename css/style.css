@@ -20,10 +20,10 @@ li{
 a{
     text-decoration: none;
 }
-.container {
+/* /* .container {
     /* width: 90%;
-    margin: 0 auto; */
-}
+    margin: 0 auto;
+} */
 
 .hamburger {
     cursor: pointer;
@@ -124,4 +124,26 @@ header{
     text-align: center;
     padding:1rem;
     border-radius: 0.5rem;
+}
+
+/* MICHAEL'S PART */
+
+.part{
+    background-color: rgb(234, 246, 246);
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: max-content;
+    font-size: 5rem;
+    padding: 2em 4em 5em 1em;
+    text-align: left;
+
+}
+
+.diff{
+    color: rgb(90, 163, 90);
+}
+
+.selling{
+    background-color: black;
+    color: white;
 }
