@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
     <link rel="stylesheet" href="./css/style.css">
     
@@ -13,82 +14,131 @@
     <header id="home">
             <nav class="navbar">
                 <!-- Logo -->
-                <a href="#home" id="logo"><img src="./assets/images/logo.svg" alt=""></a>
-    
-                <!-- Nav Menu -->
+                <div class="nav-logo">
+                    <a href="#home" id="logo"><img src="./assets/images/logo.svg" alt=""></a>
+                </div>
                 <ul class="nav-menu">
-                    <li class="nav-item"><a href="#overview" class="nav-link" id="payments">Payments</a>
-                    <div class="dropdown-content">
-                        <div class="drop">
-                            <img src="./assets/images/flag-logo.svg" alt="">
-                            <div class="dd-details">
-                                <h4>Collect payments</h4>
-                                <p>Collect payments in 30+ currencies</p>
-                            </div>
-                        </div>
-                        <div class="drop">
-                            <img src="./assets/images/network-logo.svg" alt="">
-                            <div class="dd-details">
-                                <h4>Send money</h4>
-                                <p>Send money to anyone or business globally</p>
-                            </div>
-                        </div>
-                        <div class="drop">
-                            <img src="./assets/images/shop-bag.svg" alt="">
-                            <div class="dd-details">
-                                <h4>Checkout demo</h4>
-                                <p>Experience checkout yourself</p>
-                            </div>
-                        </div>
-                    </div>
+                    <li class="nav-item dropdown-menu">
+                        <span class="nav-label">Payments</span>
+                        <ul class="nav-dropdown">
+                            <li class="dropdown-item">
+                                <a href="#" class="dropdown-link">
+                                    <img src="./assets/images/flag-logo.svg" alt="">
+                                    <span class="dropdown-info">
+                                        <span class="dd-title">Collect payments</span>
+                                        <span class="dd-text">
+                                            collect payment in 30+ countries
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="dropdown-link">
+                                    <img src="./assets/images/network-logo.svg" alt="">
+                                    <span class="dropdown-info">
+                                        <span class="dd-title">Send money</span>
+                                        <span class="dd-text">
+                                            Send money to anyone or business globally.
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="dropdown-link">
+                                    <img src="./assets/images/shop-bag.svg" alt="">
+                                    <span class="dropdown-info">
+                                        <span class="dd-title">Checkout demo</span>
+                                        <span class="dd-text">
+                                            Experience checkout yourself
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown-menu">
+                        <span class="nav-label">Commerce</span>
+                        <ul class="nav-dropdown">
+                            <li class="dropdown-item">
+                                <a href="#" class="dropdown-link">
+                                    <img src="./assets/images/store-icon.svg" alt="">
+                                    <span class="dropdown-info">
+                                        <span class="dd-title">Store</span>
+                                        <span class="dd-text">
+                                            Start selling online
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="dropdown-link">
+                                    <img src="./assets/images/payment.svg" alt="">
+                                    <span class="dropdown-info">
+                                        <span class="dd-title">Payment links</span>
+                                        <span class="dd-text">
+                                            Accept payments without writing code.
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#" class="dropdown-link">
+                                    <img src="./assets/images/invoice.svg" alt="">
+                                    <span class="dropdown-info">
+                                        <span class="dd-title">Invoices</span>
+                                        <span class="dd-text">
+                                            Create professional Invoices
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="#product" class="nav-link" id="commerce">Commerce</a>
-                        <div class="dropdown-content">
-                            <div class="drop">
-                                <img src="./assets/images/store-icon.svg" alt="">
-                                <div class="dd-details">
-                                    <h4>Store</h4>
-                                    <p>Start selling online.</p>
-                                </div>
-                            </div>
-                            <div class="drop">
-                                <img src="./assets/images/payment.svg" alt="">
-
-                                <div class="dd-details">
-                                    <h4>Payment Links</h4>
-                                    <p>Accept payments without writing code.</p>
-                                </div>
-                            </div>
-                            <div class="drop">
-                                <img src="./assets/images/invoice.svg" alt="">
-
-                                <div class="dd-details">
-                                    <h4>Invoices</h4>
-                                    <p>Creat professional invoices</p>
-                                </div>
-                            </div>
-                        </div>
+                        <a href="#" class="nav-link">
+                            <span class="nav-info">
+                                <span class="dd-title">Issuing</span>
+                                <span class="dd-text">
+                                    Issue physical & virtual cards
+                                </span>
+                            </span>
+                        </a>
                     </li>
-                    <li class="nav-item other-nav" >
-                        <a href="#price" class="nav-link" id="issuing">Issuing</a>
-                        <span>Issue physical & virtual cards</span>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-info">
+                                <span class="dd-title">Capital</span>
+                                <span class="dd-text">
+                                    Get quick access to flexible loans to grow your business.
+                                </span>
+                            </span>
+                        </a>
                     </li>
-                    <li class="nav-item other-nav">
-                        <a href="#subscribe" class="nav-link">Capital</a>
-                        <span>Get quick access to flexible loans to grow your business.</span>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-info">
+                                <span class="dd-title">Grow</span>
+                                <span class="dd-text">
+                                    Regiser & incorporate your business from anywhere
+                                </span>
+                            </span>
+                        </a>
                     </li>
-                    <li class="nav-item other-nav">
-                        <a href="#" class="nav-link">Grow</a>
-                        <span>Register & incorporate your business from anywhere</span>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span class="nav-info">
+                                <span class="dd-title">Faas</span>
+                                <span class="dd-text">
+                                    Embed financial services into your product
+                                </span>
+                            </span>
+                        </a>
                     </li>
-                    <li class="nav-item other-nav">
-                        <a href="#" class="nav-link">FaaS</a>
-                        <span>Embed financial services into your product</span>
-                    </li>
-
-                    <a href="#" id="sign-in">Sign in</a>
                 </ul>
+
+                <button class="sign">
+                    <a href="#" class="nav-btn">Sign in</a>
+                </button>        
                 
                 <div class="hamburger">
                     <span class="bar"></span>
@@ -96,6 +146,121 @@
                 </div>
             </nav>
     </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-wrapper">
+            <div class="hero-info">
+                <h1 class="hero-heading intro-head">
+                    <span class="orange-heading">Endless possiblities</span> for every business
+                </h1>
+                <p class="hero-subheading">
+                    Sell online, process payments, build financial products, or use business tools designed to grow your business.
+                </p>
+                <div class="hero-ctas">
+                    <div class="cta cta-btn">
+                        <a href="#" id="cta-1" class="cta-link">Create a free account</a>
+                    </div>
+                    <div class="cta-btn-2">
+                        <a href="#" id="cta-2" class="cta-link">Contact sales</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Section -->
+        <section class="customer-section">
+            <div class="customer-container">
+                <div class="first-customer">
+                    <figure class="customer-img">
+                    <img src="./assets/images/foot-city.webp" alt="" id="footcity" class="customer-footcity">
+                    <figcaption class="footcity biz-name">Foot city</figcaption>
+                    </figure>
+                </div>
+                <div class="second-customer">
+                    <figure class="customer-img">
+                        <img src="./assets/images/Famasi-3.webp" alt="" id="famasi">
+                        <figcaption class="famasi biz-name">Famasi</figcaption>
+                    </figure>
+                    <p class="customer-text">It's not the size of the company, it's the size of the ambition. Ambitious businesses of all sizes count on Flutterwave
+                    to grow their business everywhere.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Businesses & partners section -->
+        <section class="partners">
+            <div class="partners-container container">
+                <p class="partner-intro">
+                    We are trusted by
+                    <b>1 Million+</b> businesses
+                </p>
+                <div class="partners-list">
+                    <ul class="logo-list">
+                        <li>
+                            <img src="./assets/images/uber.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/images/mtn.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/images/chipper.svg" alt="">
+                        </li>
+                        <li >
+                            <img src="./assets/images/piggyvest.svg" alt="">
+                        </li>
+                        <li id="wise">
+                            <img src="./assets/images/wise.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/images/microsoft.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payments -->
+        <section class="payments">
+            <div class="payment-container container">
+                <h1 class="payment-intro intro-head">
+                    A fully unified set of
+                    <span class="orange-heading">payments tools</span>
+                </h1>
+
+                <div class="features">
+                    <div class="features-section">
+                        <h3 class="feat-title">Checkout</h3>
+                        <p class="feat-desc">Checkout features our smart payment ordering system, incredible speed, and beautiful simplicity. It's designed to grow
+                        your revenue and provide the best payment experience to your customers.</p>
+                        <a href="#" id="feat-btn">Get started</a>
+                    </div>
+                    <div class="features-media">
+                        <img src="./assets/images/checkout.png" alt="">
+                    </div>
+                    <div class="features-section">
+                        <div class="accept-payment">
+                            <h3 class="feat-title ">Accept Payments</h3>
+                            <p class="feat-desc">Easily receive money from anyone, anywhere in the world.</p>
+                            <div class="learn-link">
+                            <a href="#" class="learn-more">Learn more</a>
+                            <span class="arrow"> <i class="uil uil-angle-right-b" style="font-size:20px;"></i></span>
+                            </div>
+                        </div>
+                        <div class="Transfers">
+                            <h3 class="feat-title">Transfers (Payout)</h3>
+                            <p class="feat-desc">Make single or bulk transfers to bank accounts from your Flutterwave dashboard</p>
+
+                            <div class="learn-link">
+                                <a href="#" class="learn-more">Learn more</a>
+                                <span class="arrow"> <i class="uil uil-angle-right-b" style="font-size:20px;"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="./js/main.js" defer></script>
 </body>
