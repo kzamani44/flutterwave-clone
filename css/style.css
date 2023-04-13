@@ -72,8 +72,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width:85%;
+    width:90%;
     margin:0 auto;
+    flex:0 auto;
 }
 .nav-menu{
     display: flex;
@@ -158,19 +159,25 @@ header{
 .sign{
     border: none;
     border-radius: 10px;
+    background-color: #fb4e20;
+    
 }
 
 .nav-btn {
-    display: block;
-    width:150px;
-    background-color:#eee;
+    display: inline-block;
+    flex:1;
+    /* width:100%; */
+    /* background-color:#eee; */
     color: #000;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     padding: 15px 15px;
     border-radius: 10px;
     text-align: center;
     transition: all 0.3s ease;
+}
+#menu-sign{
+    display: none;
 }
 .nav-btn:hover{
     background-color: #0a0e27;
@@ -419,7 +426,7 @@ header{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        margin: 0;
+        margin: 0 auto;
         max-width: 100%;
         position: relative;
         /* background-color: #00abab; */
@@ -443,7 +450,7 @@ header{
         left: 0;
         right:0;
         background-color: #fff;
-        z-index: 3;
+        z-index: 100;
         display: none;
         align-items: stretch;
         border-bottom: 1px solid red;
@@ -453,6 +460,7 @@ header{
     }   
     .nav-menu.active{
         display: block;
+        position: relative;
     }
     .nav-item{
         padding: 1rem 1.5rem 0;
@@ -521,17 +529,18 @@ header{
         font-weight: 300;
     }
     .sign{
+        position: relative;
         display: block;
         margin: 2.5rem auto;
+        max-width: fit-content;
         flex-direction: column;
-        align-items: stretch;
         text-align: center;
-        
+        text-align: center;
+    }
+    #nav-sign{
+        display: none;
     }
     .nav-btn{
-        display: block;
-        position: relative;
-        bottom: 0;
         width: 100%;
         background-color:rgba(10, 14, 39, .9);
         color: #fff;
@@ -540,9 +549,7 @@ header{
         padding: 15px 110px;
         border-radius: 10px;
     }
-    .sign.active{
-        display: block;
-    }
+    
     
 
     /* Hero Styles */
