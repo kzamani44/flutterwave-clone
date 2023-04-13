@@ -455,7 +455,7 @@ header{
         display: block;
     }
     .nav-item{
-        padding: 1rem;
+        padding: 1rem 1.5rem 0;
         margin-bottom: 2.3rem;
     }
     .nav-item:nth-child(1),
@@ -493,6 +493,8 @@ header{
     .nav-item:not(:last-child) {
         margin: 0;
     }
+
+
     .dropdown-item .dropdown-link{
         display: flex;
         align-items: flex-start;
@@ -538,24 +540,25 @@ header{
         padding: 15px 110px;
         border-radius: 10px;
     }
-
+    .sign.active{
+        display: block;
+    }
+    
 
     /* Hero Styles */
     .hero-wrapper{
-        padding:4rem 0;
+        padding:2rem 1rem;
     }
     .hero-info{
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap:2rem;
         padding: 10px 5px;
     }
     .hero-heading{
-        font-size: 50px;
+        font-size: 55px;
         font-weight: 500;
-        line-height: 1;
-        
+        margin-bottom: 1.5rem;
     }
     .orange-heading{
         color:#fb9129;
@@ -564,32 +567,42 @@ header{
         font-size: 18px;
         font-weight: 300;
         line-height: 1.5;
+        color:#000;
     }
 
     .hero-ctas{
+        position: relative;
         width:100%;
         display:flex;
-        gap:10px;
         align-items: center;
     }
-    .cta-1{
+    .cta #cta-1 {
         background-color: #0a0e27;
-        padding:0.8rem;
+        padding: 15px 10px;
+        color: white;
+        font-size: 12px;
+        font-weight: 600;
         border-radius: 10px;
-        font-size: 13px;
     }
-    .cta-1 a{
-        color:#fff;
-    }
-    .cta-2{
+    .cta-btn-2 #cta-2 {
+        padding: 15px 10px;
+        color: #0a0e27;
+        font-size: 12px;
+        font-weight: 500;
         background-color: #eee;
-        padding: 0.8rem;
         border-radius: 10px;
-        font-size: 13px;
     }
+    
 
-    /* Customer-Section Styles */
+    /* Customer-Section Styles  for Mobile*/
+    .customer-section{
+        width:100%;
+        margin: 2.5rem auto;
+        padding: 0;
+    }
     .customer-container{
+        width: 90%;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -599,20 +612,14 @@ header{
     figure{
         position: relative;
     }
-    .biz-name{
-        position: absolute;
-        bottom: 2rem;
-        font-size: 24px;
-        font-weight: 900;
-        color: #fff;
-    }
-    #footcity{
-        right: 2.4rem;
-    }
-    #famasi{
-        left:1.5rem
+    .first-customer,
+    .second-customer {
+        margin: 0 auto;
+        position: relative;
+        max-width: 100%;
     }
     .second-customer{
+        top:0;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
@@ -620,24 +627,54 @@ header{
         gap:2rem;
         color:#1d1d1d;
         line-height: 1.5;
+        height: 100%;
+    }
+    .customer-text {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.6;
+        margin: 0;
+    }
+    .customer-img #footcity {
+        width: 100%;
+        object-position: center
+    }
+    .customer-img #famasi{
+        height: 100%;
+    }
+    .biz-name{
+        position: absolute;
+        bottom: 2rem;
+        font-size: 24px;
+        font-weight: 900;
+        color: #fff;
+    }
+    .footcity{
+        right: 30px;
+    }
+    #famasi{
+        left:1.5rem
     }
 
     /* Partners Style */
     .partners{
-        padding-top: 5rem;
+        padding: 0;
     }
     .partner-intro{
-        font-size: 21px;
+        font-size: 20px;
         font-weight: 500;
         margin-bottom: 2rem;
+        line-height: 1.2;
     }
     .logo-list{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        gap:2rem
+        justify-content: flex-start;
     }
     .logo-list li img{
+        margin:1.5rem 0.65rem;
         height:1.4rem;
     }
     #wise img{
@@ -646,14 +683,12 @@ header{
 
     /* Commerce-section Style */
     .payments{
-        padding-top: 7rem;
-        padding-bottom: 5rem;
+        padding: 7rem 0 5rem 0;
         color:#1d1d1d;
     }
     .payment-container{
         display: flex;
         flex-direction:column ;
-        gap:3rem;
         padding: 0 10px ;
     }
     .payment-intro{
@@ -662,8 +697,10 @@ header{
     }
     .features{
         flex-direction: column;
+        padding:0;
     }
     .features-section{
+        max-width: 100%;
         display: flex;
         flex-direction: column;
         margin-bottom: 40px;
@@ -673,11 +710,13 @@ header{
         line-height: 1.5;
         font-weight: 300;
         margin-bottom: 30px;
+        padding: 0;
     }
     .feat-title{
-        margin-bottom: 20px;
+        margin: 0;
         font-size: 20px;
         font-weight: 600;
+        padding: 0;
     }
     #feat-btn{
         background-color:#0a0e27;
@@ -687,6 +726,7 @@ header{
         font-weight: 600;
         padding:15px 25px;
         border-radius: 10px;
+        margin-left: 0;
     }
     .features-media{
         margin:3rem 0 ;
@@ -695,13 +735,12 @@ header{
         height: 550px;
         filter: drop-shadow(0 4px 20px rgba(0, 0, 0, .2))
     }
-    .accept-payment{
-        margin-bottom: 40px;
-    }
+    
     .learn-link{
         display: flex;
         align-items: center;
         color:#fb4e20;
+        padding-left: 0;
     }
     .learn-more{
         color:#fb4e20;
