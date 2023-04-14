@@ -30,6 +30,9 @@ a{
 .green-text{
     color:#35a162;
 }
+.purple-text{
+    color:#6672c7;
+}
 .intro-head{
     font-family: 'Millik';
     letter-spacing: -2px;
@@ -416,7 +419,7 @@ header{
 }
 .commerce-container-1{
     max-width:90%;
-    margin:0 auto;
+    margin:0 auto 10rem auto;
     padding: 3rem;
 }
 .commerce-container-1 h1{
@@ -498,7 +501,60 @@ header{
     text-align: center;
     font-size: 18px;
 }
-
+/* Big Text below commerce section */
+.big-text-container{
+    width:90%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.big-text{
+    font-size: 80px;
+    font-weight: 300;
+    margin-bottom: 4rem;
+}
+#b-text-btn{
+    display: block;
+    background-color: #0a0e27;
+    width: fit-content;
+    padding: 28px 32px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+/* Commerce Dark Section */
+.commerce-dark-section{
+    background-color: #1d1d1d;
+    padding-top: 9rem;
+}
+.d-info-container{
+    /* background-color: aqua; */
+    width:70%;
+    margin:0 auto;
+    text-align: center;
+}
+.d-head{
+    color:#fff;
+    font-size: 80px;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+}
+.d-text{
+    font-size:22px;
+    color:#fff;
+    width:65%;
+    margin: 0 auto 50px auto;
+}
+#d-btn{
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+    width: fit-content;
+    padding: 28px 32px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1d1d1d;
+}
 /* ----------------- */
 /* ----------------- */
 /* MOBILE DEVICES & SMALLER SCREENS */
@@ -909,6 +965,70 @@ header{
         margin-top: 20px;
         text-align: center;
         font-size: 16px;
+    }
+
+    /* Big Text below commerce section */
+    .big-text-container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 2rem 0;
+    }
+
+    .big-text {
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 1.5;
+        margin-bottom: 2.5rem;
+    }
+
+    #b-text-btn {
+        display: block;
+        background-color: #0a0e27;
+        width: fit-content;
+        padding: 22px 28px;
+        border-radius: 10px;
+        font-size: 13px;
+        color: #fff;
+    }
+
+    /* Commerce Dark Section */
+    .commerce-dark-section {
+        background-color: #1d1d1d;
+        padding-top: 5rem;
+    }
+
+    .d-info-container {
+        /* background-color: aqua; */
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .d-head {
+        color: #fff;
+        font-size: 36px;
+        font-weight: 500;
+        margin-bottom: 2.5rem;
+    }
+
+    .d-text {
+        font-size: 18px;
+        color: #fff;
+        width:100%;
+        line-height:1.5;
+        margin: 0 auto 50px auto;
+    }
+
+    #d-btn {
+        display: block;
+        margin: 0 auto;
+        background-color: #fff;
+        width: fit-content;
+        padding: 22px 28px;
+        border-radius: 10px;
+        font-size: 13px;
+        font-weight: 500;
+        color: #1d1d1d;
     }
 
 }
